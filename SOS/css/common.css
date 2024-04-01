@@ -60,34 +60,45 @@ a {color:#222;text-decoration:none;}
 
 
 /* Layout */
-.area-header {}
-.area-header .area-inner {position:relative;width:1920px;}
-.area-header .logo {overflow:hidden;text-indent:-1000px;background:url(images/img_logo_header.png) no-repeat 50%;}
+.area-header {position:absolute;left:0;top:0;width:100%;height:100px;overflow:hidden;}
+.area-header .area-inner {position:relative;display:flex;justify-content: flex-end;margin:0 auto;width:1290px;}
+.area-header .logo {position:absolute;left:0;top:14px;width:284px;height:73px;overflow:hidden;background:url(../images/img_logo_header.png) no-repeat 50%;}
+.area-header .logo a {display:block;position:absolute;left:0;top:0;width:100%;height:100%;text-indent:-1000px;}
 .area-header .box-util-join {display:flex;}
-.area-header .box-util-join .btn-join {}
-.area-header .box-util-join .btn-join::before {content:'';display:inline-block;width:20px;height:20px;background:url(images/btn_join.png) no-repeat 50%;}
-.area-header .box-util-join .btn-scrap {}
-.area-header .box-util-join .btn-scrap::before {content:'';display:inline-block;width:20px;height:20px;background:url(images/btn_join.png) no-repeat 50%;}
+.area-header .box-util-join .btn-join {display:flex;justify-content: center;align-items: center;height:38px;}
+.area-header .box-util-join .btn-join::before {content:'';display:inline-block;width:20px;height:20px;background:url(../images/btn_join_header.png) no-repeat 50%;}
+.area-header .box-util-join .btn-scrap {display:flex;justify-content: center;align-items: center;height:38px;}
+.area-header .box-util-join .btn-scrap::before {content:'';display:inline-block;width:20px;height:20px;background:url(../images/btn_scrap_header.png) no-repeat 50%;}
 .area-header .box-util-login {display:flex;}
-.area-header .box-util-login .btn-login {}
-.area-header .box-util-login .btn-sitemap {background:url(images/btn_sitemap.png) no-repeat 50%;}
+.area-header .box-util-login .btn-login {display:flex;justify-content: center;align-items: center;height:38px;}
+.area-header .box-util-login .btn-sitemap {display:flex;justify-content: center;align-items: center;width:38px;height:38px;background:url(../images/btn_sitemap_header.png) no-repeat 50%;}
+
+.area-header.on {height:377px;background:#fff;}
 
 .navigation-global {}
-.naivgation-global >ul {display:flex;background:red;}
-.naivgation-global >ul >li {width:100px;}
-.naivgation-global >ul >li >span {display:block;}
-.naivgation-global >ul >li >ul {display:flex;flex-direction:column;}
-.naivgation-global >ul >li >ul >li {}
-.naivgation-global >ul >li >ul >li >span {display:block;}
+.navigation-global >ul {display:flex;}
+.navigation-global >ul >li {position:relative;width:100px;}
+.navigation-global >ul >li >span {display:block;}
+.navigation-global >ul >li >ul {display:flex;flex-direction:column;width:100%;}
+.navigation-global >ul >li >ul >li {}
+.navigation-global >ul >li >ul >li >span {display:block;}
 
-.area-visual-sub {}
+.area-footer {}
+.area-footer .area-inner {position:relative;margin:0 auto;width:1290px;}
 
-.navigation-local {}
+.area-visual-sub {background:#0174BD;}
+.area-visual-sub .area-inner {margin:0 auto;width:1290px;height:500px;}
 
-.board-list {display: table;}
+.navigation-local {background:#0174BD;}
+.navigation-local >ul {display:flex;;margin:0 auto;width:1290px;}
+
+.area-content {}
+.area-content .area-inner {margin:0 auto;padding:72px 0;width:1290px;height:500px;}
+
+.board-list {display: table;width:100%;border-collapse: collapse;}
 .board-list .thead {display: table-header-group;}
-.board-list .thead .tr {display: table-column;}
-.board-list .thead .tr >div {display: table-cell;}
-.board-list .tbody {display: table-column-group;}
-.board-list .tbody .tr {display: table-column;}
-.board-list .tbody .tr >div {display: table-cell;}
+.board-list .thead .tr {display: table-row;}
+.board-list .thead .tr >div {display: table-cell;padding:5px 10px;text-align:center;border:1px solid #ccc;}
+.board-list .tbody {display: table-row-group;}
+.board-list .tbody .tr {display: table-row;}
+.board-list .tbody .tr >div {display: table-cell;text-align:center;border:1px solid #ccc;}
