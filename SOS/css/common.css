@@ -72,9 +72,9 @@ a {color:#222;text-decoration:none;}
 .area-header .box-util-login .btn-login {}
 .area-header .box-util-login .btn-sitemap {background:url(images/btn_sitemap.png) no-repeat 50%;}
 
-.naivgation-global {display:none;}
+.navigation-global {}
 .naivgation-global >ul {display:flex;}
-.naivgation-global >ul >li {}
+.naivgation-global >ul >li {width:100px;}
 .naivgation-global >ul >li >span {display:block;}
 .naivgation-global >ul >li >ul {display:flex;flex-direction:column;}
 .naivgation-global >ul >li >ul >li {}
