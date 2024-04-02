@@ -114,22 +114,24 @@
 
         <!-- Board List -->
         <div class="board-list">
-          <div class="thead">
-            <div class="tr">
-              <div class="th col-10">번호</div>
-              <div>제목</div>
-              <div class="th col-10">작성자</div>
-              <div class="th col-10">등록일</div>
-              <div class="th col-10">조회</div>
+          <div class="table-type1">
+            <div class="thead">
+              <div class="tr">
+                <div class="th col-10">번호</div>
+                <div>제목</div>
+                <div class="th col-10">작성자</div>
+                <div class="th col-10">등록일</div>
+                <div class="th col-10">조회</div>
+              </div>
             </div>
-          </div>
-          <div class="tbody">
-            <div class="tr">
-              <div class="td">0000</div>
-              <div class="td title">제목입니다. <span class="attached">00</span></div>
-              <div class="td">홍길동</div>
-              <div class="td">0000.00.00</div>
-              <div class="td">0,000</div>
+            <div class="tbody">
+              <div class="tr">
+                <div class="td">0000</div>
+                <div class="td title">제목입니다. <span class="attached">00</span></div>
+                <div class="td">홍길동</div>
+                <div class="td">0000.00.00</div>
+                <div class="td">0,000</div>
+              </div>
             </div>
           </div>
         </div>
@@ -188,7 +190,22 @@
 
         <!-- Board Write -->
         <div class="board-write">
-          
+          <div class="table-type2">
+            <div class="tr">
+              <div class="th required">제목</div>
+              <div class="td">
+                <input type="text">
+              </div>
+            </div>
+            <div class="tr">
+              <div class="th">내용</div>
+              <div class="td">
+                <textarea col="" row="6"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="box-attach"><span class="label">첨부파일</span><input type="file" id="attfile1"><label for="attfile1">파일선택</label></div>
+          <div class="box-attach"><span class="label">첨부파일</span><input type="file" id="attfile2"><label for="attfile2">파일선택</label></div>
         </div>
         <!-- //Board Write -->
 
