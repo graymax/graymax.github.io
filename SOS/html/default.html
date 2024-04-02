@@ -108,6 +108,22 @@
 
         <!-- Contain Search Options -->
         <div class="contain-option-search">
+          <div class="box-option">
+            <select class="input-select">
+              <option>전체</option>
+            </select>
+            <select class="input-select">
+              <option>전체</option>
+            </select>
+          </div>
+          <div class="box-search">
+            <select class="input-select">
+              <option>전체</option>
+            </select>
+            <input type="text" placeholder="">
+            <button type="button" class="btn-reset">초기화</button>
+            <button type="button" class="btn-type1">조회</button>
+          </div>
           
         </div>
         <!-- //Contain Search Options -->
@@ -117,17 +133,17 @@
           <div class="table-type1">
             <div class="thead">
               <div class="tr">
-                <div class="th col-10">번호</div>
+                <div class="th col-2">번호</div>
                 <div>제목</div>
-                <div class="th col-10">작성자</div>
-                <div class="th col-10">등록일</div>
-                <div class="th col-10">조회</div>
+                <div class="th col-2">작성자</div>
+                <div class="th col-2">등록일</div>
+                <div class="th col-2">조회</div>
               </div>
             </div>
             <div class="tbody">
               <div class="tr">
                 <div class="td">0000</div>
-                <div class="td title">제목입니다. <span class="attached">00</span></div>
+                <div class="td title">제목입니다. <span class="attached">0</span></div>
                 <div class="td">홍길동</div>
                 <div class="td">0000.00.00</div>
                 <div class="td">0,000</div>
@@ -162,18 +178,18 @@
         <!-- Board View  -->
         <div class="board-view">
           <div class="group-head">
-            <div class="title">제목입니다.</div>
-            <div class="writer">홍길동</div>
-          </div>
-          <div class="group-detail">
-            <div class="state"><span class="label">상태</span>처리동결</div>
+            <div class="title">2024년 3월 전문가 상담 및 기업애로 원스톱 지원센터 이용안내</div>
             <div class="writer">홍길동</div>
             <div class="date">0000.00.00</div>
             <div class="hit">0,000</div>
           </div>
+          <div class="group-detail">
+            <div class="state"><span class="label">상태</span>처리동결</div>
+          </div>
           <div class="group-body">
             내용입니다.
           </div>
+          <!-- 첨부파일 -->
           <div class="group-attach">
             <span class="label">첨부파일</span>
             <div class="list-files">
@@ -181,31 +197,52 @@
               <a href="">기업애로원스톱종합지원센터_프로보노_근무_일정(3월).pdf (64KB )</a>
             </div>
           </div>
+          <!-- //첨부파일 -->
+          <!-- 이전글 다음글 -->
           <div class="group-linktopic">
-            <div class="item"><span class="label">이전글</span><a href="">인구 2.0 위원회 도민참여단(가족친화경영기업 대표)모집</a></div>
-            <div class="item"><span class="label">다음글</span><a href="">인구 2.0 위원회 도민참여단(가족친화경영기업 대표)모집</a></div>
+            <div class="item"><span class="label prev">이전글</span><a href="">인구 2.0 위원회 도민참여단(가족친화경영기업 대표)모집</a></div>
+            <div class="item"><span class="label next">다음글</span><a href="">인구 2.0 위원회 도민참여단(가족친화경영기업 대표)모집</a></div>
           </div>
+          <!-- //이전글 다음글 -->
         </div>
         <!-- //Board View  -->
+
+        <div class="box-infor-type1">
+          <span></span>
+          1.회원가입이 되어있지 않을 경우
+
+        </div>
 
         <!-- Board Write -->
         <div class="board-write">
           <div class="table-type2">
             <div class="tr">
-              <div class="th required">제목</div>
+              <div class="th required">작성자</div>
               <div class="td">
-                <input type="text">
+                홍길동
               </div>
             </div>
             <div class="tr">
-              <div class="th">내용</div>
+              <div class="th required">휴대폰<span class="requir">*</span></div>
               <div class="td">
-                <textarea col="" row="6"></textarea>
+                <input type="number" placeholder="숫자만 입력하세요.">
+              </div>
+            </div>
+            <div class="tr">
+              <div class="th required">제목<span class="requir">*</span></div>
+              <div class="td">
+                <input type="text" placeholder="제목을 입력하세요.">
+              </div>
+            </div>
+            <div class="tr">
+              <div class="th">내용<span class="requir">*</span></div>
+              <div class="td">
+                <textarea col="" row="6" placeholder="제도개선 내용을 입력하세요."></textarea>
               </div>
             </div>
           </div>
-          <div class="box-attach"><span class="label">첨부파일</span><input type="file" id="attfile1"><label for="attfile1">파일선택</label></div>
-          <div class="box-attach"><span class="label">첨부파일</span><input type="file" id="attfile2"><label for="attfile2">파일선택</label></div>
+          <div class="box-attach"><span class="label">첨부파일</span><span class="filename">첨부된 파일이 없습니다.</span><input type="file" id="attfile1" placeholder="첨부파일" value="첨부파일"><label for="attfile1">파일선택</label></div>
+          <div class="box-attach"><span class="label">첨부파일</span><span class="filename">첨부된 파일이 없습니다.</span><input type="file" id="attfile2" placeholder="첨부파일" value="첨부파일"><label for="attfile2">파일선택</label></div>
         </div>
         <!-- //Board Write -->
 
