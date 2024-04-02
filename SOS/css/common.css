@@ -90,29 +90,31 @@ a {color:var(--Text-01-color);text-decoration:none;}
 
 
 /* Layout */
-.area-header {position:absolute;left:0;top:0;width:100%;overflow:hidden;}
-.area-header .area-inner {position:relative;display:flex;justify-content:flex-end;align-items: center;margin:0 auto;width:149.5rem;height:10rem;}
+.area-header {position:absolute;left:0;top:0;width:100%;overflow:hidden;z-index: 10;}
+.area-header::before {content:'';display:block;position:absolute;left:0;top:10.1rem;width:100%;height:1px;background-color:var(--line-color-01);}
+.area-header .area-inner {position:relative;display:flex;justify-content:flex-end;align-items: flex-start;margin:0 auto;width:149.5rem;height:10rem;}
 .area-header .logo {position:absolute;left:0;top:1.4rem;width:28.4rem;height:7.3rem;overflow:hidden;background:url(../images/img_logo_header.png) no-repeat 50%;}
-.area-header .logo a {display:block;position:absolute;left:0;top:0;width:100%;height:100%;text-indent:-100rem;}
-.area-header .box-util-join {display:flex;margin-left: 6rem;}
+.area-header .logo a {display:flex;align-items:center;position:absolute;left:0;top:0;padding:0 0 0 13.4rem;width:100%;height:100%;font-size:2.8rem;font-weight:700;letter-spacing:-0.056rem;color:var(--White);box-sizing:border-box;}
+.area-header .box-util-join {display:flex;margin-left: 2rem;margin-top: 3.3rem;}
 .area-header .box-util-join .btn-join {display:flex;justify-content center;align-items:center;height:3.8rem;color:var(--White);font-size:1.5rem;font-weight:500;letter-spacing: -0.03rem;}
 .area-header .box-util-join .btn-join::before {content:'';display:inline-block;width:2rem;height:2rem;background:url(../images/btn_join_header.png) no-repeat 50%;}
 .area-header .box-util-join .btn-scrap {display:flex;justify-content:center;align-items:center;height:3.8rem;color:var(--White);font-size:1.5rem;font-weight:500;letter-spacing: -0.03rem;}
 .area-header .box-util-join .btn-scrap::before {content:'';display:inline-block;width:2rem;height:2rem;background:url(../images/btn_scrap_header.png) no-repeat 50%;}
-.area-header .box-util-login {display:flex;gap:1rem;margin-left: 3rem;}
+.area-header .box-util-login {display:flex;gap:1rem;margin-left: 3rem;margin-top: 3.3rem;}
 .area-header .box-util-login .btn-login {display:flex;justify-content:center;align-items:center;font-size:1.6rem;font-weight:500;width:7.4rem;height:3.8rem;background-color:var(--White);border-radius:1.2rem;}
 .area-header .box-util-login .btn-sitemap {display:flex;justify-content:center;align-items:center;width:3.8rem;height:3.8rem;overflow:hidden;text-indent:-100rem;background:url(../images/btn_sitemap_header.png) no-repeat 50%;}
 
-.area-header.on {/* height:37.7rem; *//*background:var(--Main-color-01);*/}
+.area-header.on {background:var(--Main-color-01);}
+.area-header.on .area-inner {height:37.7rem;}
 
-.navigation-global {}
+.navigation-global {margin-top:3.7rem;}
 .navigation-global >ul {display:flex;gap:4rem;}
 .navigation-global >ul >li {position:relative;}
 .navigation-global >ul >li >span {display:block;}
 .navigation-global >ul >li >span a {white-space:nowrap;font-size:2rem;font-weight:600;color:var(--White);letter-spacing:-0.04rem;}
-.navigation-global >ul >li >ul {display:flex;flex-direction:column;width:100%;display:none;}
+.navigation-global >ul >li >ul {display:flex;flex-direction:column;gap:1.8rem;margin-top: 4.8rem;width:100%;}
 .navigation-global >ul >li >ul >li {}
-.navigation-global >ul >li >ul >li >span {display:block;}
+.navigation-global >ul >li >ul >li >a {display:block;font-size:1.8rem;font-weight:500;color:var(--Text-02-color);}
 
 .area-footer {}
 .area-footer .area-inner {position:relative;margin:0 auto;padding:2rem 0;width:129rem;}
@@ -134,7 +136,8 @@ a {color:var(--Text-01-color);text-decoration:none;}
 .area-footer .text-copyright {margin-top:0.9rem;padding:0 .9rem;font-size:1.4rem;font-weight:500;color:var(--Text-03-color);}
 
 .area-visual-sub {background:var(--Main-color-01);}
-.area-visual-sub .area-inner {margin:0 auto;width:129rem;height:28rem;}
+.area-visual-sub .area-inner {position:relative;margin:0 auto;width:129rem;height:28rem;}
+.area-visual-sub .title {position:absolute;left:0;top:17rem;font-size:3.6rem;font-weight:700;line-height:5rem;letter-spacing:-0.036rem;color:var(--White);}
 
 .navigation-local {background:var(--Main-color-01);}
 .navigation-local >ul {display:flex;;margin:0 auto;width:129rem;}
