@@ -2,21 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 /* Setting */
 :root {
+  
   font-size: 10px;
 
   /* BackGround color */
-  --bgmain : #0174bd;
-  --bgsub1 : #0174bd;
-  --bg0 : # fff;
-  --bg1 : # 000;
+  --Main-color-01 : #0174bd;
+  --Main-color-02 : ##0AA4B4;
+  --Main-color-03 : ##6ED34A;
+  --Sub-01 : #0940A1;
+  --Sub-02 : #0C2F80;
+  --Sub-03 : #3DB5FF;
+  --Title-color : #202632;
+  --Text-01-color : #333D4B;
+  --Text-02-color : #4E5968;
+  --Text-03-color : #7C8A9F;
+
+  --BG-color : #F5F6F7;
   
-  /* Font Color */
-  --fc1 : #ccc;
-  --fc2 : #ccc;
-  
-  /* Border Color */
-  --bc1 : #ccc;
-  --bc2 : #ccc;
+  --Table-color : #E9EEF9;
+  --line-color-01 : #CBD5E1;
+  --line-color-02 : #7C8A9F;
+
+  --Cell-color : #F6F9FF;
+  --Bar-color : #AABFE4
+
+  --White : #FFF;
+  --Black : #000;
+
+
 }
 
 html {-webkit-text-size-adjust: none;-moz-text-size-adjust: none;-ms-text-size-adjust: none;}
@@ -95,7 +108,7 @@ a {color:var(--fc1);text-decoration:none;}
 .navigation-global {}
 .navigation-global >ul {display:flex;}
 .navigation-global >ul >li {position:relative;width:10rem;}
-.navigation-global >ul >li >span {display:block;}
+.navigation-global >ul >li >span {display:block;font-size:2rem;font-weight:600;color:#fff;}
 .navigation-global >ul >li >ul {display:flex;flex-direction:column;width:100%;}
 .navigation-global >ul >li >ul >li {}
 .navigation-global >ul >li >ul >li >span {display:block;}
