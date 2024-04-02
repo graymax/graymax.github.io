@@ -133,16 +133,16 @@ a {color:var(--Text-01-color);text-decoration:none;}
 .board-list .tbody {display:table-row-group;}
 .board-list .tbody .tr {display:table-row;}
 .board-list .tbody .tr >div {display:table-cell;padding:2.3rem 1rem 2.1rem;box-sizing:border-box;height:7rem;text-align:center;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;border-bottom:1px solid var(--line-color-01);background-color:var(--White);}
-.boart-list .col-1 {width:100%;}
-.boart-list .col-2 {width:90%;}
-.boart-list .col-3 {width:80%;}
-.boart-list .col-4 {width:70%;}
-.boart-list .col-5 {width:60%;}
-.boart-list .col-6 {width:50%;}
-.boart-list .col-7 {width:40%;}
-.boart-list .col-8 {width:30%;}
-.boart-list .col-9 {width:20%;}
-.boart-list .col-10 {width:10%;}
+.board-list .col-1 {width:100%;}
+.board-list .col-2 {width:90%;}
+.board-list .col-3 {width:80%;}
+.board-list .col-4 {width:70%;}
+.board-list .col-5 {width:60%;}
+.board-list .col-6 {width:50%;}
+.board-list .col-7 {width:40%;}
+.board-list .col-8 {width:30%;}
+.board-list .col-9 {width:20%;}
+.board-list .col-10 {width:10%;}
 
 .paginate {display:flex;justify-content:center;gap:3rem;margin-top:4.2rem;}
 .paginate a {display:inline-flex;justify-content:center;align-items:center;width:3rem;height:3rem;font-size:1.6rem;font-weight:400;letter-spacing:-0.064rem;background-color:var(--BG-color);}
