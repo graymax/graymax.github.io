@@ -108,7 +108,8 @@ a {color:var(--Text-01-color);text-decoration:none;}
 .navigation-global {}
 .navigation-global >ul {display:flex;}
 .navigation-global >ul >li {position:relative;width:10rem;}
-.navigation-global >ul >li >span {display:block;font-size:2rem;font-weight:600;color:var(--White);letter-spacing: -0.04rem;}
+.navigation-global >ul >li >span {display:block;}
+.navigation-global >ul >li >span a {font-size:2rem;font-weight:600;color:var(--White);letter-spacing: -0.04rem;}
 .navigation-global >ul >li >ul {display:flex;flex-direction:column;width:100%;display:none;}
 .navigation-global >ul >li >ul >li {}
 .navigation-global >ul >li >ul >li >span {display:block;}
