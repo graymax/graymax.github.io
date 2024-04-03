@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>경기도 - 기업SOS넷 (Speed One-stop Solution) (SOSNet standard 1.0)</title>
+	<style>
+		* {margin:0;padding:0;}
+            h1 {padding:15px 20px 15px 20px;font-size:24px;background:#ececec;}
+            .stat {padding:10px 10px;}
+            .stat p {display:inline-block;margin-left:10px;font-size:12px;}
+            h2 {margin:30px 20px 0px 20px;}
+            table {width:calc(100% - 40px);margin:0 20px 50px 20px;border-collapse:collapse;border-top:2px solid #ccc; border-bottom:1px solid #ccc;}
+            th {padding:10px 20px;font-size:12px;border-top:1px solid #ccc;background:#ececec;}
+            td {padding:5px 20px;font-size:12px;border-top:1px solid #ccc;}
+            td:nth-child(1),
+			/* td:nth-child(4), */
+			td:nth-child(10)  {text-align:center;}
+			.tr-top td {border-top-color: #777;}
+	</style>
+	<script src="js/lib/jquery-3.6.0.min.js"></script>
+	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script> -->
+    <script>
+        $(function() {
+            var trNum = $('table tr').length + 1;
+            for(i = 0; i < trNum; i++){
+                $('table tr:nth-child(' + i + ') td:first-child').text(i-1);
+                linktext = $('table tr:nth-child(' + i + ') td:nth-child(7)').text();
+
+				if ($('table tr:nth-child(' + i + ') td')) {
+					
+				} else {
+					
+				}
+
+                if($('table tr:nth-child(' + i + ') td:nth-child(8)').text() == '완료'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(7)').html('<a href="html/'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+                if($('table tr:nth-child(' + i + ') td:nth-child(8)').text() == '진행중'){
+                    $('table tr:nth-child(' + i + ') td:nth-child(7)').html('<a href="html/'+ linktext +'" target="_blank">'+ linktext +'</a>')
+                }
+            }
+            $('.stat .page-total').text(trNum - 2)
+            $('.stat .page-ing').text($('table td:nth-child(8):contains("진행중")').length)
+            $('.stat .page-comp').text($('table td:nth-child(8):contains("완료")').length)
+
+        });
+    </script>
+	<link rel="apple-touch-icon-precomposed" href="/bo/img/common/sosnet.png" />
+    <link rel="shortcut icon" type="image/png" href="/bo/img/common/favicon.ico" />
+</head>
+
+<body>
+	<h1>프론트 HTML</h1>
+	<h2>기업SOS넷</h2>
+
+	<div class="stat">
+		<p>총 페이지 : <span class="page-total"></span> 페이지</p>
+		<p>진행중 : <span class="page-ing"></span> 페이지</p>
+		<p>완료 : <span class="page-comp"></span> 페이지</p>
+	</div>
+	<table>
+		<colgroup>
+			<col width="" >
+			<col width="" >
+			<col width="" >
+			<col width="" >
+			<col width="" >
+			<col width="" >
+			<col width="" >
+			<col width="" >
+		</colgroup>
+		<tr>
+			<th>No.</th>
+			<th>구분</th>
+			<th>1dep</th>
+			<th>2dep</th>
+			<th>3dep</th>
+			<th>4dep</th>
+			<th>파일명</th>
+			<th>작업상황</th>
+			<th>비고</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td>템플릿 페이지</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>default.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr class="tr-top">
+			<td></td>
+			<td></td>
+			<td>메인</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>index.html</td>
+			<td>완료</td>
+			<td></td>
+		</tr>
+		<tr class="tr-top">
+			<td></td>
+			<td></td>
+			<td>기업 SOS지원센터</td>
+			<td>센터소개</td>
+			<td></td>
+			<td></td>
+			<td>sub1_1.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>기업 SOS지원센터</td>
+			<td>시스템소개</td>
+			<td></td>
+			<td></td>
+			<td>sub1_2.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>기업 SOS지원센터</td>
+			<td>기업애로사항</td>
+			<td></td>
+			<td></td>
+			<td>sub1_3.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr class="tr-top">
+			<td></td>
+			<td></td>
+			<td>기업애로 신청</td>
+			<td>기업애로신청</td>
+			<td></td>
+			<td></td>
+			<td>sub3_2.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>기업애로 신청</td>
+			<td>신청내역조회</td>
+			<td></td>
+			<td></td>
+			<td>sub3_3.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr class="tr-top">
+			<td></td>
+			<td></td>
+			<td>기업애로 정보마당</td>
+			<td>공지사항</td>
+			<td>목록</td>
+			<td></td>
+			<td>sub4_1.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>기업애로 정보마당</td>
+			<td>공지사항</td>
+			<td>보기</td>
+			<td></td>
+			<td>sub4_1_view.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>기업애로 정보마당</td>
+			<td>기업애로FAQ</td>
+			<td></td>
+			<td></td>
+			<td>sub4_2.html</td>
+			<td>진행중</td>
+			<td></td>
+		</tr>
+
+	</table>
+</body>
+</html>
