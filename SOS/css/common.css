@@ -117,7 +117,8 @@ a {color:var(--Text-01-color);text-decoration:none;}
 .area-visual-sub .title {position:absolute;left:10rem;top:17rem;font-size:3.6rem;font-weight:700;line-height:5rem;letter-spacing:-0.036rem;color:var(--White);}
 
 .navigation-local {background:var(--Main-color-01);}
-.navigation-local >ul {display:flex;;margin:0 auto;width:129rem;}
+.navigation-local >ul {display:flex;;margin:0 auto;width:129rem;overflow:auto;-ms-overflow-style: none;}
+.navigation-local >ul::-webkit-scrollbar{display:none;}
 .navigation-local >ul li {}
 .navigation-local >ul li a {display:flex;justify-content:center;align-items:center;white-space:nowrap;padding:0 4.2rem 0 2.9rem;height:7rem;font-size:2rem;font-weight:500;color:var(--White);}
 .navigation-local >ul li a::before {content:'';display:inline-block;margin-right:1rem;width:.4rem;height:.4rem;border-radius:100%;background-color:var(--White);}
