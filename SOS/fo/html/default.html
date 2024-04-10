@@ -137,6 +137,10 @@
         </div>
         <!-- //Contain Search Options -->
 
+        <div class="box-board-head">
+          <span class="input-checkbox"><label><input type="checkbox"> 내가 신청한 애로조회</label></span>
+        </div>
+
         <!-- Board List -->
         <div class="board-list">
           <div class="table-type1">
@@ -244,8 +248,8 @@
         </div>
 
         <div class="box-infor-type1">
-          <div class="title">기업SOS넷 불편/장애신고 게시판입니다.<br >기업SOS넷 시스템 사용중 아래의 장애가 발생하였을 경우 문의주시기 바랍니다.</div>
-          1.회원가입이 되지 않을 경우<br >
+          <div class="title"><strong>기업SOS넷 불편/장애신고 게시판입니다.<br >기업SOS넷 시스템 사용중 아래의 장애가 발생하였을 경우 문의주시기 바랍니다.</strong></div>
+          <em>1.회원가입이 되지 않을 경우</em><br >
           2.로그인이 되지 않을 경우<br >
           3.기타 장애가 발생하여 '관리자에게 문의하세요' 라는 알림문구가 나왔을 경우
 
@@ -278,6 +282,14 @@
                 <textarea col="" row="6" placeholder="제도개선 내용을 입력하세요."></textarea>
               </div>
             </div>
+          </div>
+          <div class="box-radio"><span class="label">공개여부</span>
+            <label class="input-radio"><input type="radio" name="공개여부" checked> 공개</label>
+            <label class="input-radio"><input type="radio" name="공개여부"> 비공개</label>
+          </div>
+          <div class="box-checkbox"><span class="label">통지방법</span>
+            <label class="input-checkbox"><input type="checkbox" name="통지방법" checked> 휴대폰</label>
+            <label class="input-checkbox"><input type="checkbox" name="통지방법"> 이메일</label>
           </div>
           <div class="box-attach"><span class="label">첨부파일</span><span class="filename">첨부된 파일이 없습니다.</span><input type="file" id="attfile1" placeholder="첨부파일" value="첨부파일"><label for="attfile1">파일선택</label></div>
           <div class="box-attach"><span class="label">첨부파일</span><span class="filename">첨부된 파일이 없습니다.</span><input type="file" id="attfile2" placeholder="첨부파일" value="첨부파일"><label for="attfile2">파일선택</label></div>

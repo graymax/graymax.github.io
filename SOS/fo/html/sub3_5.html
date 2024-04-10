@@ -76,7 +76,7 @@
     <!-- Sub Visual Area -->
     <div class="area-visual-sub">
       <div class="area-inner">
-        <h2 class="title">기업 SOS지원단</h2>
+        <h2 class="title">기업애로신청</h2>
       </div>
     </div>
     <!-- //Sub Visual Area -->
@@ -84,8 +84,12 @@
     <!-- Local Navigation Bar -->
     <div class="navigation-local">
       <ul>
-        <li><a href="">지원단 소개</a></li>
-        <li class="on"><a href="">지원단 현황</a></li>
+        <li><a href="">애로처리절차</a></li>
+        <li><a href="">기업애로신청</a></li>
+        <li><a href="">신청내역조회</a></li>
+        <li><a href="">애로처리사례</a></li>
+        <li class="on"><a href="">기업현장방문</a></li>
+        <li><a href="">규제개선건의</a></li>
       </ul>
     </div>
     <!-- //Local Navigation Bar -->
@@ -94,7 +98,7 @@
       <div class="area-inner">
 
         <div class="header-content">
-          <h3 class="title">지원단 현황</h3>
+          <h3 class="title">기업현장방문</h3>
           <div class="box-util">
             <button type="button" class="btn-home">HOME</button>
             <div class="box-fontsize">
@@ -110,73 +114,78 @@
         <!-- Contain Search Options -->
         <div class="contain-option-search">
           <div class="box-option">
-            <span class="input-select">
-              <select title="옵션선택">
-                <option>기업애로 유형을 선택하세요.</option>
-              </select>
-            </span>
-            <span class="input-select">
-              <select title="옵션선택">
-                <option>시를 선택하세요.</option>
-              </select>
-            </span>
+            <p>기업SOS지원센터의 월별 기업현장 방문일정입니다.</p>
           </div>
           <div class="box-search">
             <span class="input-select">
               <select title="옵션선택">
-                <option>전체</option>
+                <option>전체일정</option>
               </select>
             </span>
-            <input type="text" placeholder="">
-            <button type="button" class="btn-reset">초기화</button>
-            <button type="button" class="btn-type1">조회</button>
+            <button type="이전 월" class="btn-prevmonth"></button>
+            <span class="input-select">
+              <select title="년도선택">
+                <option>0000년</option>
+              </select>
+            </span>
+            <span class="input-select">
+              <select title="월선택">
+                <option>월</option>
+              </select>
+            </span>
+            <button type="이전 월" class="btn-prev-month"></button>
+            <button type="button" class="btn-type1">오늘</button>
           </div>
           
         </div>
         <!-- //Contain Search Options -->
 
-        <!-- Board List -->
-        <div class="board-list">
-          <div class="table-type1">
-            <div class="thead">
-              <div class="tr">
-                <div class="th col-2">지원분야</div>
-                <div class="th col-2">지역</div>
-                <div class="th col-3">기관명</div>
-                <div class="th">주소</div>
-                <div class="th col-3">연락처</div>
-                <div class="th col-2">홈페이지</div>
-              </div>
-            </div>
-            <div class="tbody">
-              <div class="tr">
-                <div class="td block">기타</div>
-                <div class="td block">부천시</div>
-                <div class="td block">부천산업진흥원</div>
-                <div class="td block">(00000) 경기도 부천시 평천로 000,00동 0000호</div>
-                <div class="td block">000-0000-0000</div>
-                <div class="td block"><a href="" class="link-homepage">Homepage</a></div>
-              </div>
-            </div>
-          </div>
+        <div class="calendar">
+          <table>
+            <colgroup>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <td>일</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="disable">25</td>
+                <td class="disable">26</td>
+                <td class="disable">27</td>
+                <td class="disable">28</td>
+                <td class="disable">29</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <!-- //Board List -->
 
-        <!-- Paginate -->
-        <div class="paginate">
-          <a href="" class="btn-paging-first">처음목록</a>
-          <a href="" class="btn-paging-prev">이전목록</a>
-          <span class="page">
-            <a href="" class="on">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>
-            <a href="">5</a>
-          </span>
-          <a href="" class="btn-paging-next">다음목록</a>
-          <a href="" class="btn-paging-last">마지막목록</a>
-        </div>
-        <!-- //Paginate -->
+
 
       </div>
     </div>
