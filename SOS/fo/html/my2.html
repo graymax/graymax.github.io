@@ -76,7 +76,7 @@
     <!-- Sub Visual Area -->
     <div class="area-visual-sub">
       <div class="area-inner">
-        <h2 class="title">기업SOS넷</h2>
+        <h2 class="title">나의 정보</h2>
       </div>
     </div>
     <!-- //Sub Visual Area -->
@@ -84,9 +84,9 @@
     <!-- Local Navigation Bar -->
     <div class="navigation-local">
       <ul>
-        <li><a href="">로그인</a></li>
-        <li><a href="">아이디/비밀번호 찾기</a></li>
-        <li class="on"><a href="">회원가입</a></li>
+        <li><a href="">내 정보 보기</a></li>
+        <li class="on"><a href="">회원탈퇴신청</a></li>
+        <li><a href="">내 스크랩 목록보기</a></li>
       </ul>
     </div>
     <!-- //Local Navigation Bar -->
@@ -94,30 +94,33 @@
     <div class="area-content">
       <div class="area-inner">
 
-        <div class="join">
-
-          <div class="head">
-            <h3 class="title">회원가입</h3>
-            <p class="text">기업SOS지원센터에 회원가입을 축하드립니다.</p>
-          </div>
-
-          <div class="box-text-infor">
-            <p class="text-type1"><strong>회원종류</strong>에 따라 회원절차가 다릅니다.</p>
-            <p class="text-type2">고객님께서 해당하시는 회원으로 선택하여 가입해주세요.</p>
-          </div>
-          
-          <div class="box-selectmember">
-            <div class="item">
-              <label><input type="radio" name="로그인유형"><i>기업회원</i></label>
-              <p>기업회원으로 가입하실분은 이곳을 선택하세요.</p>
-            </div>
-            <div class="item">
-              <label><input type="radio" name="로그인유형"><i>예비창업자</i></label>
-              <p>예비창업자로 가입하실분은 이곳을 선택하세요.</p>
-            </div>
-          </div>
-
+        <div class="head-group">
+          <h3 class="title">정말 탈퇴 하시겠습니까?</h3>
+          <p class="text">
+            회원탈퇴를 하시면 회원님의 애로신청, 컨설턴트신청, 남기신 글,회원정보 등 로그인에 필요한 서비스의 이용이 불가능하게 됩니다.<br >
+            회원탈퇴시 신중히 고려해 주시기 바랍니다.</p>
         </div>
+
+        <div class="box-selectmember">
+          <label><input type="radio" name="로그인유형"><i>기업회원</i></label>
+          <label><input type="radio" name="로그인유형"><i>예비창업자</i></label>
+          <label><input type="radio" name="로그인유형"><i>컨설턴트</i></label>
+        </div>
+
+        <div class="box-leave-infor">
+          <input type="text" placeholder="이름을 입력하세요">
+          <input type="text" placeholder="이메일을 입력하세요.">
+        </div>
+
+        <!-- Buttons Group -->
+        <div class="contain-button-bottom">
+          <button type="button" class="btn-type1">탈퇴신청</button>
+          <button type="button" class="btn-type2">취소</button>
+        </div>
+        <!-- //Buttons Group -->
+
+
+
 
       </div>
     </div>

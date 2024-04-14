@@ -85,8 +85,8 @@
     <div class="navigation-local">
       <ul>
         <li><a href="">로그인</a></li>
-        <li><a href="">아이디/비밀번호 찾기</a></li>
-        <li class="on"><a href="">회원가입</a></li>
+        <li class="on"><a href="">아이디/비밀번호 찾기</a></li>
+        <li><a href="">회원가입</a></li>
       </ul>
     </div>
     <!-- //Local Navigation Bar -->
@@ -94,30 +94,49 @@
     <div class="area-content">
       <div class="area-inner">
 
-        <div class="join">
+        <div class="find-idpass">
 
           <div class="head">
-            <h3 class="title">회원가입</h3>
-            <p class="text">기업SOS지원센터에 회원가입을 축하드립니다.</p>
-          </div>
-
-          <div class="box-text-infor">
-            <p class="text-type1"><strong>회원종류</strong>에 따라 회원절차가 다릅니다.</p>
-            <p class="text-type2">고객님께서 해당하시는 회원으로 선택하여 가입해주세요.</p>
+            <h3 class="title">아이디/비밀번호 찾기</h3>
+            <p class="text">기업SOS지원센터에 방문하신것을 진심으로 감사합니다.</p>
           </div>
           
           <div class="box-selectmember">
-            <div class="item">
-              <label><input type="radio" name="로그인유형"><i>기업회원</i></label>
-              <p>기업회원으로 가입하실분은 이곳을 선택하세요.</p>
+            <label><input type="radio" name="로그인유형"><i>기업회원</i></label>
+            <label><input type="radio" name="로그인유형"><i>예비창업자</i></label>
+            <label><input type="radio" name="로그인유형"><i>컨설턴트</i></label>
+          </div>
+
+          <div class="box-selectfind">
+            <button type="button" class="btn-type1">아이디 찾기</button>
+            <button type="button" class="btn-type1">비밀번호 찾기</button>
+          </div>
+
+          <div class="contain-find">
+            <!-- 아이디 찾기 누를 경우 -->
+            <div class="box-login">
+              <label>아이디 찾기</label>
+              <div class="box-input">
+                <input type="text" class="input-id" placeholder="이름을 입력하세요.">
+                <input type="password" class="input-password" placeholder="이메일을 입력하세요.">
+              </div>
+              <button type="button" class="btn-login">아이디 찾기</button>
             </div>
-            <div class="item">
-              <label><input type="radio" name="로그인유형"><i>예비창업자</i></label>
-              <p>예비창업자로 가입하실분은 이곳을 선택하세요.</p>
+            <!-- //아이디 찾기 누를 경우 -->
+            <!-- 비밀번호 찾기 누를 경우 -->
+            <div class="box-login">
+              <label>비밀번호 찾기</label>
+              <div class="box-input">
+                <input type="text" class="input-id" placeholder="이름을 입력하세요.">
+                <input type="password" class="input-password" placeholder="아이디를 입력하세요.">
+              </div>
+              <button type="button" class="btn-login">비밀번호 찾기</button>
             </div>
+            <!-- //비밀번호 찾기 누를 경우 -->
           </div>
 
         </div>
+
 
       </div>
     </div>

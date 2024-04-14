@@ -76,7 +76,7 @@
     <!-- Sub Visual Area -->
     <div class="area-visual-sub">
       <div class="area-inner">
-        <h2 class="title">기업SOS넷</h2>
+        <h2 class="title">나의 정보</h2>
       </div>
     </div>
     <!-- //Sub Visual Area -->
@@ -84,9 +84,9 @@
     <!-- Local Navigation Bar -->
     <div class="navigation-local">
       <ul>
-        <li><a href="">로그인</a></li>
-        <li><a href="">아이디/비밀번호 찾기</a></li>
-        <li class="on"><a href="">회원가입</a></li>
+        <li><a href="">내 정보 보기</a></li>
+        <li><a href="">회원탈퇴신청</a></li>
+        <li class="on"><a href="">내 스크랩 목록보기</a></li>
       </ul>
     </div>
     <!-- //Local Navigation Bar -->
@@ -94,30 +94,62 @@
     <div class="area-content">
       <div class="area-inner">
 
-        <div class="join">
-
-          <div class="head">
-            <h3 class="title">회원가입</h3>
-            <p class="text">기업SOS지원센터에 회원가입을 축하드립니다.</p>
-          </div>
-
-          <div class="box-text-infor">
-            <p class="text-type1"><strong>회원종류</strong>에 따라 회원절차가 다릅니다.</p>
-            <p class="text-type2">고객님께서 해당하시는 회원으로 선택하여 가입해주세요.</p>
-          </div>
-          
-          <div class="box-selectmember">
-            <div class="item">
-              <label><input type="radio" name="로그인유형"><i>기업회원</i></label>
-              <p>기업회원으로 가입하실분은 이곳을 선택하세요.</p>
-            </div>
-            <div class="item">
-              <label><input type="radio" name="로그인유형"><i>예비창업자</i></label>
-              <p>예비창업자로 가입하실분은 이곳을 선택하세요.</p>
-            </div>
-          </div>
-
+        <div class="head-group">
+          <h3 class="title">내 스크랩 목록보기</h3>
+          <p class="text">스크랩 한 목록을 보실 수 있습니다.</p>
         </div>
+        
+        <!-- Board List -->
+        <div class="board-list">
+          <div class="table-type1">
+            <div class="thead">
+              <div class="tr">
+                <div class="th col-2">번호</div>
+                <div>제목</div>
+                <div class="th col-2">등록일</div>
+                <div class="th col-2">삭제</div>
+              </div>
+            </div>
+            <div class="tbody">
+              <div class="tr">
+                <div class="td num">0000</div>
+                <div class="td title">제목입니다.</div>
+                <div class="td date">0000.00.00</div>
+                <div class="td num"><button type="button" class="btn-type2">삭제</button></div>
+              </div>
+              <div class="tr">
+                <div class="td num">0000</div>
+                <div class="td title">제목입니다.</div>
+                <div class="td date">0000.00.00</div>
+                <div class="td num"><button type="button" class="btn-type2">삭제</button></div>
+              </div>
+              <div class="tr">
+                <div class="td num">0000</div>
+                <div class="td title">제목입니다.</div>
+                <div class="td date">0000.00.00</div>
+                <div class="td num"><button type="button" class="btn-type2">삭제</button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //Board List -->
+
+        <!-- Paginate -->
+        <div class="paginate">
+          <a href="" class="btn-paging-first">처음목록</a>
+          <a href="" class="btn-paging-prev">이전목록</a>
+          <span class="page">
+            <a href="" class="on">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+            <a href="">5</a>
+          </span>
+          <a href="" class="btn-paging-next">다음목록</a>
+          <a href="" class="btn-paging-last">마지막목록</a>
+        </div>
+        <!-- //Paginate -->
+
 
       </div>
     </div>
