@@ -197,6 +197,7 @@ h5.title {margin-bottom:1.2rem;font-size:2.4rem;font-weight:500;letter-spacing:-
 
 .contain-option-search {display:flex;margin-bottom:4rem;justify-content:space-between;padding:2.8rem 3.3rem;background:var(--Cell-color);border-radius:1rem;}
 .contain-option-search .box-option {display:flex;gap:.9rem;}
+.contain-option-search .box-option .btn-type1 {padding-left:3rem;padding-right:3rem;}
 .contain-option-search .box-option p {display:flex;align-items:center;font-weight:500;color:var(--Text-01-color);font-size:1.8rem;}
 .contain-option-search .box-search {display:flex;gap:.9rem;}
 
@@ -224,7 +225,7 @@ h5.title {margin-bottom:1.2rem;font-size:2.4rem;font-weight:500;letter-spacing:-
 .table-type1 .attached::before {content:'';display:block;width:2.2rem;height:2.7rem;background-color:var(--Main-color-01);mask-image:url(../images/icon_attachfile.svg);mask-repeat:no-repeat;mask-position:50%;}
 .table-type1 .icon-lock {position:relative;display:inline-block;width:3rem;height:3rem;overflow:hidden;vertical-align:bottom;text-indent:-100rem;}
 .table-type1 .icon-lock::before {content:'';position:absolute;left:0;top:0;width:100%;height:100%;background-color:var(--Main-color-01);mask-image:url(../images/icon_lock.svg);mask-repeat:no-repeat;mask-position:50%;}
-
+.table-type1 .icon-notice {display:inline-flex;justify-content:center;align-items:center;width:5rem;height:2.8rem;font-size:1.4rem;color:var(--White);font-weight: 600;line-height:100%;background:var(--Sub-04);border-radius: .6rem;}
 
 .table-type2 {display:table;width:100%;border-collapse:collapse;border-top:2px solid #000;}
 .table-type2 .tr {display:table-row-group;}
@@ -295,6 +296,11 @@ div[class^='table-type'] .col-11 {width:75%;}
 .box-checkagree {margin-top:5.5rem;margin-bottom:5rem;text-align:center;}
 .box-checkagree .text {margin-bottom:3.8rem;font-size:1.8rem;font-weight:500;letter-spacing:-0.072rem;color:var(--Main-color-01);}
 
+.contain-state {display:flex;justify-content: space-between;gap:1.8rem;margin-bottom:2.3rem;}
+.contain-state dl {display:flex;justify-content: space-between;align-items:center;padding:0 5rem;width:100%;height:9.6rem;box-sizing:border-box;background:var(--Cell-color);border-radius: 1rem;}
+.contain-state dl dt {line-height:3.2rem;font-size:1.8rem;font-weight:500;color:var(--Text-02-color);}
+.contain-state dl dd {font-size:1.8rem;font-weight:500;line-height:100%;color:var(--Text-01-color);}
+.contain-state dl dd strong {display:inline-block;margin-right:.2rem;font-size:3.2rem;font-weight:500;}
 
 .login {}
 .login .head {margin-bottom:4rem;padding-bottom:1.8rem;border-bottom:1px solid var(--line-color-01);}

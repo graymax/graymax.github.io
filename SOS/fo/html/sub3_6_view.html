@@ -111,75 +111,33 @@
           </div>
         </div>
 
-        <div class="contain-state">
-          <dl>
-            <dt>전체</dt>
-            <dd><strong>00</strong>건</dd>
-          </dl>
-          <dl>
-            <dt>접수</dt>
-            <dd><strong>00</strong>건</dd>
-          </dl>
-          <dl>
-            <dt>처리</dt>
-            <dd><strong>00</strong>건</dd>
-          </dl>
-          <dl>
-            <dt>완료</dt>
-            <dd><strong>00</strong>건</dd>
-          </dl>
-        </div>
-
-        <!-- Contain Search Options -->
-        <div class="contain-option-search">
-          <div class="box-option">
-            <button type="button" class="btn-type1">규제개선건의 등록</button>
-          </div>
-          <div class="box-search">
-            <span class="input-select">
-              <select title="옵션선택">
-                <option>전체</option>
-              </select>
-            </span>
-            <input type="text" placeholder="">
-            <button type="button" class="btn-reset">초기화</button>
-            <button type="button" class="btn-type1">조회</button>
-          </div>
-          
-        </div>
-        <!-- //Contain Search Options -->
-
-        <!-- Board List -->
-        <div class="board-list">
-          <div class="table-type1">
-            <div class="thead">
-              <div class="tr">
-                <div class="th col-2">번호</div>
-                <div>제목</div>
-                <div class="th col-2">상태</div>
-                <div class="th col-2">등록자</div>
-                <div class="th col-2">등록일</div>
+        <!-- Board Write -->
+        <div class="board-write">
+          <div class="table-type2">
+            <div class="tr">
+              <div class="th required">제목<span class="requir">*</span></div>
+              <div class="td">
+                <input type="text" placeholder="제목을 입력하세요.">
               </div>
             </div>
-            <div class="tbody">
-              <div class="tr">
-                <div class="td num"><span class="icon-notice">공지</span></div>
-                <div class="td title">규제개선건의 운영 및 process규제개선건의 방법 공지글입니다. <span class="attached">0</span></div>
-                <div class="td name">접수</div>
-                <div class="td date">홍길동</div>
-                <div class="td hit">0000.00.00</div>
-              </div>
-              <div class="tr">
-                <div class="td num">0000</div>
-                <div class="td title"><span class="icon-lock"></span>규제개선건의 운영 및 process규제개선건의 방법 공지글입니다. <span class="attached">0</span></div>
-                <div class="td name">접수</div>
-                <div class="td date">홍길동</div>
-                <div class="td hit">0000.00.00</div>
+            <div class="tr">
+              <div class="th">내용<span class="requir">*</span></div>
+              <div class="td">
+                <textarea col="" row="6" placeholder="제도개선 내용을 입력하세요."></textarea>
               </div>
             </div>
           </div>
+          <div class="box-attach"><span class="label">첨부파일</span><span class="filename">첨부된 파일이 없습니다.</span><input type="file" id="attfile1" placeholder="첨부파일" value="첨부파일"><label for="attfile1">파일선택</label></div>
+          <div class="box-attach"><span class="label">첨부파일</span><span class="filename">첨부된 파일이 없습니다.</span><input type="file" id="attfile2" placeholder="첨부파일" value="첨부파일"><label for="attfile2">파일선택</label></div>
         </div>
-        <!-- //Board List -->
+        <!-- //Board Write -->
+
+        <!-- Buttons Group -->
+        <div class="contain-button-bottom">
+          <button type="button" class="btn-type1">등록</button>
+          <button type="button" class="btn-type2">취소</button>
+        </div>
+        <!-- //Buttons Group -->
 
 
       </div>
