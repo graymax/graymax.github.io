@@ -122,9 +122,184 @@
           
           <h5 class="title">기본정보</h5>
 
+          <div class="section-join">
+            <div class="section-inner">
+              <!-- 사진올리기 -->
+              <div class="contain-photo">
+                <div class="box-photo">
+                  <!-- 사진 위치 -->
+                </div>
+                <button type="button" class="btn-type1">사진 올리기</button>
+              </div>
+              <!-- //사진올리기 -->
+            </div>
+            <div class="section-inner">
+
+              <div class="box-form">
+                <label class="label">아이디<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="text" value="userid" disabled>
+                  <button type="button" class="btn-type1">중복확인</button>
+                </div>
+              </div>
+              
+              <div class="box-form">
+                <label class="label">이름<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="text" placeholder="이름을 입력하세요.">
+                  <div class="option">
+                    <label class="input-radio"><input type="radio" name="성별" checked >남</label>
+                    <label class="input-radio"><input type="radio" name="성별" >여</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="box-form">
+                <label class="label">비밀번호<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="password" placeholder="영문 대/소문자와 숫자를 혼합하여 입력하세요.">
+                </div>
+                <span class="text-error">영문 대/소자와 숫자를 혼합하여 입력하세요.</span>
+              </div>
+
+              <div class="box-form">
+                <label class="label">비밀번호 확인<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="password" placeholder="비밀번호를 한번 더 입력하세요.">
+                </div>
+                <span class="text-error">입력하신 비밀번호와 다릅니다.</span>
+              </div>
+
+              <div class="box-form">
+                <label class="label">휴대폰<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="text" placeholder="예시)919-0000-0000">
+                </div>
+                <span class="text-error">잘못된 휴대폰 번호입니다. (010-0000-0000)</span>
+              </div>
+
+              <div class="box-form">
+                <label class="label">전화번호<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="text" placeholder="예시)02-0000-0000">
+                </div>
+                <span class="text-error">잘못된 전호번호입니다. (02-0000-0000)</span>
+              </div>
+
+              <div class="box-form">
+                <label class="label">이메일<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="text" placeholder="예시)myname@temail.com">
+                </div>
+                <span class="text-error">올바른 이메일 주소를입력하세요.</span>
+              </div>
+
+              <div class="box-form">
+                <label class="label">홈페이지<span class="requir">*</span></label>
+                <div class="item">
+                  <input type="text" placeholder="URL을 입력하세요.">
+                </div>
+                <span class="text-error">올바른 URL을 입력하세요.</span>
+              </div>
+
+              <div class="box-form">
+                <label class="label">주소<span class="requir">*</span></label>
+                <div class="item">
+                  <div class="input-address">
+                    <input type="text" placeholder="우편번호" class="zipcode">
+                    <input type="text" placeholder="주소" class="address1">
+                    <input type="text" placeholder="상세주소" class="address2">
+                  </div>
+                  <button type="button" class="btn-type1">중복확인</button>
+                </div>
+                <span class="text-normal">※ Internet Explorer 우편번호검색 오류해결 &gt;</span>
+              </div>
+
+            </div>
+          </div>
+
           <h5 class="title">소속기관</h5>
 
+          <div class="section-join">
+            <div class="section-inner">
+              
+            </div>
+            <div class="section-inner">
+
+              <div class="box-form">
+                <label class="label">소속기관</label>
+                <div class="item">
+                  <input type="text" placeholder="소속기관을 입력하세요.">
+                </div>
+              </div>
+
+              <div class="box-form">
+                <label class="label">홈페이지</label>
+                <div class="item">
+                  <input type="text" placeholder="홈페이지를 입력하세요.">
+                </div>
+              </div>
+
+              <div class="box-form">
+                <label class="label">전화번호</label>
+                <div class="item">
+                  <input type="text" placeholder="전화번호를 입력하세요.">
+                </div>
+              </div>
+
+              <div class="box-form">
+                <label class="label">팩스번호</label>
+                <div class="item">
+                  <input type="text" placeholder="팩스번호를 입력하세요.">
+                </div>
+              </div>
+
+              <div class="box-form">
+                <label class="label">주소<span class="requir">*</span></label>
+                <div class="item">
+                  <div class="input-address">
+                    <input type="text" placeholder="우편번호" class="zipcode">
+                    <input type="text" placeholder="주소" class="address1">
+                    <input type="text" placeholder="상세주소" class="address2">
+                  </div>
+                  <button type="button" class="btn-type1">중복확인</button>
+                </div>
+                <span class="text-normal">※ Internet Explorer 우편번호검색 오류해결 &gt;</span>
+              </div>
+              
+            </div>
+          </div>
+
           <h5 class="title">학력</h5>
+
+          <div class="section-join single">
+            
+            <div>
+              <label class="label">직장명<span class="requir">*</span></label>
+              <input type="text" >
+            </div>
+            <div>
+              <label class="label">부서명<span class="requir">*</span></label>
+              <input type="text" >
+            </div>
+            <div>
+              <label class="label">기간<span class="requir">*</span></label>
+              <div>
+                <input type="text" >
+                <button type="button" class="btn-calendar">달력</button>
+                <span class="text-dash">-</span>
+                <input type="text" >
+                <button type="button" class="btn-calendar>달력</button>
+              </div>
+            </div>
+            <div>
+              <label class="label">비고</label>
+              <input type="text" >
+            </div>
+
+            <button class="btn-type2">제거</button>
+              
+          </div>
 
           <h5 class="title">경력</h5>
 
