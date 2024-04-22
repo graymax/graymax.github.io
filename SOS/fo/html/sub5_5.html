@@ -76,7 +76,7 @@
     <!-- Sub Visual Area -->
     <div class="area-visual-sub">
       <div class="area-inner">
-        <h2 class="title">기업SOS넷</h2>
+        <h2 class="title">컨설팅 지원</h2>
       </div>
     </div>
     <!-- //Sub Visual Area -->
@@ -86,9 +86,9 @@
       <ul>
         <li><a href="">컨설팅 사업안내</a></li>
         <li><a href="">컨설턴트 등록안내</a></li>
-        <li class="on"><a href="">컨설턴트 현황</a></li>
+        <li><a href="">컨설턴트 현황</a></li>
         <li><a href="">신청서 관리</a></li>
-        <li><a href="">정보수정요청</a></li>
+        <li class="on"><a href="">정보수정요청</a></li>
       </ul>
     </div>
     <!-- //Local Navigation Bar -->
@@ -97,7 +97,7 @@
       <div class="area-inner">
 
         <div class="header-content">
-          <h3 class="title">컨설턴트 현황</h3>
+          <h3 class="title">정보수정요청</h3>
           <div class="box-util">
             <button type="button" class="btn-home">HOME</button>
             <div class="box-fontsize">
@@ -110,6 +110,13 @@
           </div>
         </div>
 
+        <div class="box-infor-type1">
+          <div class="title">정보수정요청 게시판에서는 <em>소속기관, 컨설팅 가능 분야, 등급 변경</em>에 대한 신청만 받습니다.</div>
+          기본정보와 소속기관는 [내정보고기]의 정보수정에서 직접 수정하시기 바랍니다.<br >
+          정보수정은 최소 5일 이상 소요되며, 추진상황은 정보수정요청 게시판에서 확인하시기 바랍니다.
+          <a href="" class="btn-type1">정보수정요청</a>
+        </div>
+
         <div class="box-board-head">
           <p><strong>성명</strong>을 누르시면 해당정보를 보실 수 있습니다.</p>
         </div>
@@ -117,11 +124,10 @@
         <!-- Contain Search Options -->
         <div class="contain-option-search">
           <div class="box-option">
-            <span class="input-select">
-              <select title="옵션선택">
-                <option>선택하세요.</option>
-              </select>
-            </span>
+            <label class="input-radio"><input type="radio" name="조회조건" checked>전체</label>
+            <label class="input-radio"><input type="radio" name="조회조건">미확인</label>
+            <label class="input-radio"><input type="radio" name="조회조건">진행중</label>
+            <label class="input-radio"><input type="radio" name="조회조건">완료</label>
           </div>
           <div class="box-search">
             <span class="input-select">
@@ -143,37 +149,33 @@
             <div class="thead">
               <div class="tr">
                 <div class="th col-2">번호</div>
-                <div class="th col-2">지역</div>
-                <div class="th col-2">성명</div>
+                <div class="th col-2">이름</div>
                 <div>컨설팅 분야</div>
-                <div class="th col-3">소속</div>
-                <div class="th col-3">연락처</div>
+                <div class="th col-3">신청일</div>
+                <div class="th col-3">추진사항</div>
               </div>
             </div>
             <div class="tbody">
               <div class="tr">
                 <div class="td num">0000</div>
-                <div class="td state">경기도</div>
                 <div class="td name">홍길동</div>
                 <div class="td num">경영(경영전략)외0건</div>
-                <div class="td name">법무법인아아앤에스</div>
-                <div class="td date">000-0000-0000</div>
+                <div class="td name">0000.00.00</div>
+                <div class="td date">미확인</div>
               </div>
               <div class="tr">
                 <div class="td num">0000</div>
-                <div class="td state">경기도</div>
                 <div class="td name">홍길동</div>
                 <div class="td num">경영(경영전략)외0건</div>
-                <div class="td name">법무법인아아앤에스</div>
-                <div class="td date">000-0000-0000</div>
+                <div class="td name">0000.00.00</div>
+                <div class="td date">미확인</div>
               </div>
               <div class="tr">
                 <div class="td num">0000</div>
-                <div class="td state">경기도</div>
                 <div class="td name">홍길동</div>
                 <div class="td num">경영(경영전략)외0건</div>
-                <div class="td name">법무법인아아앤에스</div>
-                <div class="td date">000-0000-0000</div>
+                <div class="td name">0000.00.00</div>
+                <div class="td date">미확인</div>
               </div>
             </div>
           </div>
@@ -195,6 +197,9 @@
           <a href="" class="btn-paging-last">마지막목록</a>
         </div>
         <!-- //Paginate -->
+
+
+
 
       </div>
     </div>
