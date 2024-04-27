@@ -243,9 +243,10 @@ h5.title {margin-bottom:1.2rem;font-size:2.4rem;font-weight:500;letter-spacing:-
 .table-type1 .icon-notice {display:inline-flex;justify-content:center;align-items:center;width:5rem;height:2.8rem;font-size:1.4rem;color:var(--White);font-weight: 600;line-height:100%;background:var(--Sub-04);border-radius: .6rem;}
 
 .table-type2 {display:table;width:100%;border-collapse:collapse;border-top:2px solid #000;}
-.table-type2 .tr {display:table-row-group;}
-.table-type2 .th {display:table-cell;vertical-align:top;padding:1.8rem 0 1.8rem 5rem;width:24rem;min-height:6.2rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);border-bottom:1px solid var(--line-color-01);border-right:1px solid var(--line-color-01);}
-.table-type2 .td {display:table-cell;vertical-align:middle;padding:.6rem 0 .6rem 5rem;min-height:6.2rem;font-size:1.6rem;font-weight:300;color:var(--Text-02-color);border-bottom:1px solid var(--line-color-01);}
+.table-type2 .tr {display:table-row-group;border-bottom:1px solid var(--line-color-01);}
+.table-type2 .th {display:table-cell;vertical-align:top;padding:1.8rem 0 1.8rem 5rem;width:24rem;min-height:6.2rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);border-right:1px solid var(--line-color-01);}
+.table-type2 .td {display:table-cell;vertical-align:middle;padding:.6rem 0 .6rem 5rem;min-height:6.2rem;font-size:1.6rem;font-weight:300;color:var(--Text-02-color);}
+.table-type2 .td.colspan3 {display:flex;align-items:center;width: 235%;}
 
 div[class^='table-type'] .col-1 {width:5%;}
 div[class^='table-type'] .col-2 {width:10%;}
@@ -283,6 +284,7 @@ div[class^='table-type'] .col-11 {width:75%;}
 .group-attach .list-files {display:flex;flex-direction:column;gap:1.4rem;}
 .group-attach .list-files a {display:flex;align-items:flex-start;gap:1rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);}
 .group-attach .list-files a::before {content:'';display:block;flex-shrink: 0;margin-top:0.2rem;width:2.2rem;height:2.7rem;background-color:var(--Main-color-01);mask-image:url(../images/icon_attachfile.svg);mask-repeat:no-repeat;mask-position:50%;}
+.group-attach .list-files a.del {text-decoration: line-through;}
 .board-view .group-linktopic {margin-top:4.5rem;}
 .board-view .group-linktopic .item {display:flex;gap:2.5rem;align-items:center;padding:2.2rem;border-top:1px solid var(--line-color-01);}
 .board-view .group-linktopic .item .label {display:flex;align-items:center;gap:2rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);}
@@ -420,6 +422,7 @@ div[class^='table-type'] .col-11 {width:75%;}
 .board-write .table-type2 {border-top:none;}
 .board-write .table-type2 .th {padding-left:3.5rem;width:14.5rem;border:none;}
 .board-write .table-type2 .td {padding-left:0;border:none;}
+
 .requir {display:inline-block;margin-left:.2rem;color:var(--Sub-04);}
 
 .box-attach {display:flex;justify-content:space-between;align-items:center;margin:2rem 0;padding:1.5rem 2.4rem;background-color:var(--Cell-color);border-radius:1rem;}
@@ -491,16 +494,12 @@ div[class^='table-type'] .col-11 {width:75%;}
 
 .contain-button-bottom {display:flex;justify-content:center;gap:2rem;margin-top:4rem;}
 
-/*
+
 .popup-layer {display:flex;justify-content:center;align-items:center;position:fixed;left:0;top:0;z-index:10;width:100%;height:100%;background:rgba(0, 0, 0, 0.4);}
-.popup-layer .popup-inner{background:#fff;border-radius: .6rem;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
-
-.popup-layer.zipcode .popup-inner {padding:.6rem;box-sizing:border-box;width:40rem;height:51.5rem;}
-
-.box-searchbar {display:flex;align-items: center;border-bottom:1px solid #3C4766}
-.box-searchbar input[type=text] {width:100%;height:6rem;font-size:1.4rem;font-weight:500;letter-spacing: -0.028rem;color:#3C4766;border:none;}
-.box-searchbar .btn-search-address {flex-shrink: 0;width:4rem;}
-*/
+.popup-layer .popup-inner {width:100%;height:100%;background:#fff;border-radius: .6rem;box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
+.popup-layer .box-text {padding:5rem 0 2rem;text-align:center;font-size:1.8rem;}
+.popup-layer .box-text strong {color:var(--Sub-04);}
+.
 .pop-address-search {padding:0 1rem;}
 .pop-address-search legend {display:none;}
 .pop-address-search .wrap {display:flex;align-items: center;margin:0 0 .4rem;padding:0;border-bottom:2px solid #3C4766}
