@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../css/common.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  
   <script type="text/javascript" src="../js/lib.js"></script>
 </head>
 <body>
@@ -73,44 +75,98 @@
   <!-- Content Area -->
   <main>
     
-    <!-- Sub Visual Area -->
-    <div class="area-visual-sub">
+    <!-- Main Visual Area -->
+    <div class="area-visual-main">
       <div class="area-inner">
-        <h2 class="title">기업 SOS지원단</h2>
+        
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../images/img_visual_main1.png" alt=""></div>
+            <div class="swiper-slide"><img src="../images/img_visual_main2.png" alt=""></div>
+            <div class="swiper-slide"><img src="../images/img_visual_main3.png" alt=""></div>
+            <div class="swiper-slide"><img src="../images/img_visual_main4.png" alt=""></div>
+          </div>
+          <div class="contain-paging">
+            <div class="box-paging">
+              <div class="swiper-button-prev"></div>
+              <div id="fraction1" class="swiper-fraction"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="box-link-consult">
+          <a href=""><img src="../images/img_main_visuallink1.png" alt="예약상담 바로가기"></a>
+          <a href=""><img src="../images/img_main_visuallink2.png" alt="바로상담 바로가기"></a>
+        </div>
+
       </div>
     </div>
-    <!-- //Sub Visual Area -->
+    <!-- //Main Visual Area -->
 
-    
-
-    <div class="area-content">
+    <div class="area-content main">
       <div class="area-inner">
 
-        <div>
-          기업SOS넷과 함께
-          기업의 애로를 해결합니다.
-          <div class="swiper"></div>
+        <div class="section-link">
+          <p class="title"><strong>기업SOS넷과 함께</strong>기업의 애로를 해결합니다.</p>
+
+          <div class="swiper">
+            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><a href=""><img src="../images/img_main_swiper1.png" alt=""></a></div>
+              <div class="swiper-slide"><a href=""><img src="../images/img_main_swiper2.png" alt=""></a></div>
+              <div class="swiper-slide"><a href=""><img src="../images/img_main_swiper1.png" alt=""></a></div>
+              <div class="swiper-slide"><a href=""><img src="../images/img_main_swiper2.png" alt=""></a></div>
+            </div>
+
+            <div class="contain-paging">
+              <div class="box-paging">
+                <div class="swiper-button-prev"></div>
+                <div id="fraction2" class="swiper-fraction"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+          </div>
         </div>
         
-        <div>
-          <div>
+        <div class="section-content">
+          <div class="contain-links">
             <a href="">애로처리절차</a>
             <a href="">기업지원 사업안내</a>
             <a href="">기업지원단</a>
             <a href="">컨설턴트 현황</a>
             <a href="">규제개선 건의</a>
           </div>
-          <div>
-            <div>
-              <button type="button">공지사항</button>
+          <div class="contain-tab">
+            <div class="tab-head">
+              <button type="button" class="on">공지사항</button>
               <button type="button">기업애로FAQ</button>
               <button type="button">기업애로 처리통계</button>
               <button type="button">기업지원 사업안</button>
-              <button type="button">더보기</button>
+              <button type="button" class="btn-etc">더보기</button>
             </div>
-            <ul>
-              <li><A href="">전문가 상담 및 기업애로 원스톱 지원센터 이용안내 <span class="icon-new">NEW</span></li>
-            </ul>
+            <div class="tab-body" id="t1">
+              <ul>
+                <li><a href="">
+                  <span>전문가 상담 및 기업애로 원스톱 지원센터 이용안내 <span class="icon-new">N</span></span>
+                  <span class="date">0000.00.00</span></a>
+                </li>
+                <li><a href="">
+                  <span>전문가 상담 및 기업애로 원스톱 지원센터 이용안내 <span class="icon-new">N</span></span>
+                  <span class="date">0000.00.00</span></a>
+                </li>
+                <li><a href="">
+                  <span>전문가 상담 및 기업애로 원스톱 지원센터 이용안내 <span class="icon-new">N</span></span>
+                  <span class="date">0000.00.00</span></a>
+                </li>
+                <li><a href="">
+                  <span>전문가 상담 및 기업애로 원스톱 지원센터 이용안내 <span class="icon-new">N</span></span>
+                  <span class="date">0000.00.00</span></a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -196,5 +252,53 @@
   <!-- //Sitemap -->
 
   <script type="text/javascript" src="../js/style.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+
+const fraction1 = document.getElementById("fraction1");
+const slides1 = document.querySelectorAll(".area-visual-main .swiper-slide");
+const slideCount1 = slides1.length;
+fraction1.textContent = `1 / ${slideCount1}`;
+
+const swiper1 = new Swiper('.area-visual-main .swiper', {
+  loop: true,
+  pagination: {
+    el: '.area-visual-main .swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.area-visual-main .swiper-button-next',
+    prevEl: '.area-visual-main .swiper-button-prev',
+  },
+  on: {
+    slideChangeTransitionEnd: function () {
+      const realIndex1 = swiper1.realIndex;
+      fraction1.textContent = `${realIndex1 + 1} / ${slideCount1}`;
+    }
+  }
+});
+
+const fraction2 = document.getElementById("fraction2");
+const slides2 = document.querySelectorAll(".section-link .swiper-slide");
+const slideCount2 = slides2.length;
+fraction2.textContent = `1 / ${slideCount2}`;
+
+const swiper2 = new Swiper('.section-link .swiper', {
+  loop: true,
+  pagination: {
+    el: '.section-link .swiper-pagination',
+  },
+  navigation: {
+    nextEl: '.section-link .swiper-button-next',
+    prevEl: '.section-link .swiper-button-prev',
+  },
+  on: {
+    slideChangeTransitionEnd: function () {
+      const realIndex2 = swiper2.realIndex;
+      fraction2.textContent = `${realIndex2 + 1} / ${slideCount2}`;
+    }
+  }
+});
+
+  </script>
 </body>
 </html>
