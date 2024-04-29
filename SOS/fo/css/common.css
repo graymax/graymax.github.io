@@ -325,10 +325,10 @@ div[class^='table-type'] .col-11 {width:75%;}
 .board-view .group-detail .state .label {min-width:5rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);}
 .board-view .group-body {margin-bottom:5rem;padding:3.4rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;;color:var(--Title-color);}
 .board-view .group-body.faq {padding:0;}
-.group-attach {margin-top:5rem;display:flex;align-items:center;padding:2.4rem 3rem;background:var(--Cell-color);border-radius:1rem;}
+.group-attach {margin-top:5rem;display:flex;flex-wrap:wrap;align-items:center;padding:1.4rem 3rem;background:var(--Cell-color);border-radius:1rem;    justify-content: flex-end;}
 .group-attach .label {flex-shrink:0;width:12rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);}
 /* .group-attach .list-files {display:flex;flex-direction:column;gap:1.4rem;} */
-.group-attach .list-files {display:flex;justify-content: space-between;width:100%;}
+.group-attach .list-files {display:flex;justify-content:space-between;margin:1rem 0;width:calc(100% - 12rem);}
 .group-attach .list-files a {display:flex;align-items:center;gap:1rem;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);}
 .group-attach .list-files a::before {content:'';display:block;flex-shrink: 0;margin-top:0.2rem;width:2.2rem;height:2.7rem;background-color:var(--Main-color-01);mask-image:url(../images/icon_attachfile.svg);mask-repeat:no-repeat;mask-position:50%;}
 .group-attach .list-files a.del {text-decoration: line-through;}
@@ -470,6 +470,7 @@ div[class^='table-type'] .col-11 {width:75%;}
 .box-attach .filename {display:flex;align-items:center;width:100%;height:5rem;flex-shrink:1;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);}
 .box-attach input[type='file'] {position:absolute;width:0;height:0;padding:0;border:none;overflow:hidden;}
 .box-attach label {display:flex;justify-content:center;align-items:center;width:15rem;height:5rem;font-size:1.8rem;font-weight:600;color:var(--White);background-color:var(--Main-color-01);border-radius:.6rem;cursor:pointer;}
+.box-attach .group-button {display: flex;gap:1rem;}
 
 .box-radio {display:flex;justify-content:flex-start;align-items:center;margin:2rem 0;padding:1.5rem 2.4rem;background-color:var(--Cell-color);border-radius:1rem;}
 .box-radio .label {display:flex;align-items:center;width:12rem;height:5rem;flex-shrink:0;font-size:1.8rem;font-weight:400;letter-spacing:-0.072rem;color:var(--Title-color);}
