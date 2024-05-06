@@ -487,6 +487,136 @@
   </div>
   <!-- //Sitemap -->
 
+  <!-- 우편번호 검색 -->
+  <div class="pop-address-search">
+    <div class="pop-address-search-inner">
+      <div id="searchContentBox">
+        <fieldset>
+          <legend>도로명주소 검색</legend>
+          <span class="wrap">
+            <input type="text" class="popSearchInput" style="ime-mode:active;" title="검색어를 입력하세요" name="keyword" id="keyword" placeholder="도로명주소, 건물명 또는 지번입력" value="" tabindex="1">
+            <input type="button" title="검색" tabindex="2" onclick="javascript:$('#currentPage').val(1);  searchUrlJuso();" style=" cursor: pointer;">
+          </span>
+          <a class="close" href="javascript:popClose();" title="창닫기" tabindex="3">닫기</a>
+        </fieldset>
+        <p class="guide">검색어 예 : 도로명(반포대로 58), 건물명(독립기념관), 지번(삼성동 25)</p>
+  
+        <!-- nodata -->
+        <div class="popSearchNoResult result">
+          <div class="popSearchNoResult"> 검색된 내용이 없습니다.</div>
+        </div>
+        <!-- //nodata -->
+  
+        <div class="popSearchNoResult result">
+          
+          <p class="text-guide">도로명주소 검색 결과 <strong>(00건)</strong></p>
+          
+          <table class="data-col">
+            <caption>검색 결과</caption>
+            <colgroup>
+              <col style="width:8%">
+              <col>
+              <col style="width:11%">
+              <col style="width:20%">
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">도로명주소</th>
+                <th scope="col">&nbsp;</th>
+                <th scope="col">우편번호</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="subj">1</td>
+                <td class="subj" id="roadAddrTd1">
+                  <a href="javascript:setMaping('1')">
+                    <div tabindex="6">
+                      <div id="roadAddrDiv1"><b>경기도 용인시 기흥구 탑실로 145-45 (공세동)</b></div>
+                      <span>[지번]
+                        <span id="jibunAddrDiv1">경기도 용인시 기흥구 공세동 129-50</span>
+                      </span>
+                    </div>
+                  </a>
+                  <div id="detListDivX1" style="display:none;"><span> [상세건물명] </span></div>
+                  <div id="roadAddrPart1Div1" style="display:none;">경기도 용인시 기흥구 탑실로 145-45</div>
+                  <div id="roadAddrPart2Div1" style="display:none;"> (공세동)</div>
+                  <div id="engAddrDiv1" style="display:none;">145-45 Tapsil-ro, Giheung-gu, Yongin-si, Gyeonggi-do</div>
+                </td>
+                <td class="subj">
+                  <div id="detDiv1"> </div>
+                  <div id="detDivX1" style="display:none;"><a href="javascript:addrJuminRenewX(1);">닫기</a></div>
+                </td>
+                <td class="subj" style="text-align:center" id="zipNoTd1">
+                  <div id="zipNoDiv1">17084</div>
+                </td> <input type="hidden" id="admCdHid1" value="4146310700"> <input type="hidden" id="rnMgtSnHid1"
+                  value="414633204075"> <input type="hidden" id="bdMgtSnHid1" value="4146310700101290007000002"> <input
+                  type="hidden" id="detBdNmListHid1" value=""> <input type="hidden" id="bdNmHid1" value=""> <input
+                  type="hidden" id="bdKdcdHid1" value="0"> <input type="hidden" id="siNmHid1" value="경기도"> <input
+                  type="hidden" id="sggNmHid1" value="용인시 기흥구"> <input type="hidden" id="emdNmHid1" value="공세동"> <input
+                  type="hidden" id="liNmHid1" value="">
+                <input type="hidden" id="rnHid1" value="탑실로"> <input type="hidden" id="udrtYnHid1" value="0"> <input
+                  type="hidden" id="buldMnnmHid1" value="145"> <input type="hidden" id="buldSlnoHid1" value="45"> <input
+                  type="hidden" id="mtYnHid1" value="0"> <input type="hidden" id="lnbrMnnmHid1" value="129"> <input
+                  type="hidden" id="lnbrSlnoHid1" value="50"> <input type="hidden" id="emdNoHid1" value="01">
+              </tr>
+              
+            </tbody>
+          </table>
+          <!-- 페이징 -->
+          <div class="paginate" id="pageApi">
+            <a class="skip prev" href="javascript: $(&quot;#currentPage&quot;).val(6);  searchUrlJuso();">이전으로</a>
+            <strong>1</strong>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(12);  searchUrlJuso();">2</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(13);  searchUrlJuso();">3</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(14);  searchUrlJuso();">4</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(15);  searchUrlJuso();">5</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(16);  searchUrlJuso();">6</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(17);  searchUrlJuso();">7</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(18);  searchUrlJuso();">8</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(19);  searchUrlJuso();">9</a>
+            <a href="javascript:$(&quot;#currentPage&quot;).val(20);  searchUrlJuso();">10</a>
+            <a class="skip next" href="javascript: $(&quot;#currentPage&quot;).val(21);  searchUrlJuso();">다음으로</a>
+          </div>
+          <!-- 페이징 -->
+  
+          <!-- 상세주소 -->
+          <div class="detail" style="display:none;" id="resultData">
+            <p><strong>상세주소 입력</strong></p>
+            <table class="data-row">
+              <caption>주소 입력</caption>
+              <colgroup>
+                <col style="width:20%">
+                <col>
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th scope="row">도로명주소</th>
+                  <td id="addrPart1">서울특별시 영등포구</td>
+                </tr>
+                <tr>
+                  <th scope="row"><label for="inputPopAddress">상세주소입력</label></th>
+                  <td>
+                    <input type="text" name="rtAddrDetail" id="rtAddrDetail" onkeypress="addrDetailChk();" onkeyup="addrDetailChk1(this);" title="상세주소">
+                    <div id="addrPart2"></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="btns-submit">
+              <a class="btn-bl" href="javascript:setParent();">주소입력</a>
+            </div>
+          </div>
+          <!-- //상세주소 -->
+
+        </div>
+      </div>
+      <button class="btn-close-popup">닫기</button>
+    </div>
+  </div>
+  <!-- //우편번호 검색 -->
+
   <script type="text/javascript" src="../js/style.js"></script>
 </body>
 </html>
