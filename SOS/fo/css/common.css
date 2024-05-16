@@ -317,6 +317,9 @@ h6.title.reply {margin-top:4rem;font-size:2rem;font-weight:700;}
 .table-type2 .td {display:table-cell;vertical-align:middle;padding:.6rem 0 .6rem 5rem;min-height:6.2rem;font-size:1.6rem;font-weight:300;color:var(--Text-02-color);}
 .table-type2 .td > .name {font-size:1.3rem;font-weight:500;}
 .table-type2 .td .text-type1 {display:block;margin-top:.2rem;font-size:1.3rem;font-weight:400;}
+.table-type2 .td .box-rating {display: flex;padding:1rem 0;}
+.table-type2 .td .box-rating .input-radio {}
+.table-type2 .td .box-rating button {min-width:8rem;height:3rem;line-height:100%;font-size:1.2rem;background:var(--line-color-02)}
 
 .table-type2 .td.colspan3 {display:flex;align-items:center;width: 235%;}
 .table-type2.w20 .th {width:20% !important;}
@@ -575,7 +578,7 @@ div[class^='table-type'] .col-11 {width:75%;}
 .contain-reply .box-reply .cont-reply {margin:1rem 0 0 0;padding:1rem 0 1rem 0;font-size:1.6rem;border-top:1px solid var(--line-color-01);background:var(--White)}
 .contain-reply .box-reply .cont-reply .input-textarea {height:10rem;}
 .contain-reply .box-reply .box-buttons {display:flex;justify-content: flex-end;gap:1rem;padding:0 0 1rem 0;background:var(--White)}
-.contain-reply .box-reply .box-buttons button {min-width:6rem;height:3rem;font-size:1.2rem;background:var(--line-color-02)}
+.contain-reply .box-reply .box-buttons button {min-width:6rem;height:3rem;line-height:100%;font-size:1.2rem;background:var(--line-color-02)}
 
 .write-reply {padding:1rem 0;border-top:1px solid var(--line-color-01)}
 .write-reply .write-inner {display:flex;gap:1rem;}
