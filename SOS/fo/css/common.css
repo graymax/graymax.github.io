@@ -335,6 +335,8 @@ h6.title.reply {margin-top:4rem;font-size:2rem;font-weight:700;}
 .table-type2 .td .box-rating button {min-width:8rem;height:3rem;line-height:100%;font-size:1.2rem;background:var(--line-color-02)}
 
 .table-type2 .td.colspan3 {display:flex;align-items:center;width: 235%;}
+.table-type2 .td .colspan3 {width:.1rem;}
+.table-type2 .td .colspan3 > div {position:relative;overflow:hidden;padding:1rem 0;width:96rem;}
 .table-type2.w20 .th {width:20% !important;}
 .table-type2.w25 .th {width:25% !important;}
 .table-type2.w30 .th {width:30% !important;}
@@ -456,7 +458,7 @@ div[class^='table-type'] .col-11 {width:75%;}
 .join .box-text-infor .text-type2 {text-align:center;font-size:2rem;font-weight:400;letter-spacing:-0.08rem;color:var(--Title-color);}
 .join .box-selectmember {display:flex;justify-content: center;gap:4rem;flex-wrap:wrap;margin-bottom:7.5rem;}
 .join .box-selectmember .item p {width:21.4rem;font-size:2rem;font-weight:400;letter-spacing:-0.08rem;color:var(--Title-color);text-align:center;margin-top:2rem;}
-.join .box-selectmember label {position:relative;display:flex;justify-content:center;align-items:flex-end;padding:2.2rem;text-align:center;box-sizing:border-box;width:21.4rem;height:21.4rem;border-radius:10px;font-size:2rem;color:var(--Title-color);cursor:pointer;font-weight:500;letter-spacing:-0.08rem;;background:var(--Cell-color);}
+.join .box-selectmember label {position:relative;display:flex;justify-content:center;align-items:flex-end;padding:2.2rem;text-align:center;box-sizing:border-box;width:21.4rem;height:21.4rem;border-radius:10px;font-size:2rem;color:var(--Title-color);cursor:pointer;font-weight:500;letter-spacing:-0.08rem;;background:var(--Cell-color);overflow:hidden;}
 .join .box-selectmember label i {display:flex;justify-content:center;align-items:center;height:6rem;}
 .join .box-selectmember input {position:absolute;left:-100rem;top:0;}
 .join .box-selectmember label:has(:checked) {background:var(--Main-color-01);color:var(--White);}
@@ -1000,7 +1002,10 @@ div[class^='table-type'] .col-11 {width:75%;}
     .table-type2 .th {display:flex;align-items:center;padding-left:2rem;width:13rem;min-height:5rem;font-size:1.6rem;flex-shrink: 0;border-bottom:1px solid var(--line-color-01)}
     .table-type2 .td + .th {border-left:none;}
     .table-type2 .td {display:flex;align-items:center;padding-left:2rem;width:calc(100% - 13rem);font-size: 1.6rem;border-bottom:1px solid var(--line-color-01)}
-    
+    .table-type2 .td .colspan3 {width:auto;}
+    .table-type2 .td .colspan3 > div {width:auto;}
+
+
     .input-address {margin-bottom:1rem;}
     .input-address + .btn-type1 {width:100%;}
     .box-form .text-normal {position:static;margin-top:1rem;}
