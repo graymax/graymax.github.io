@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGV - Default Page</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Black+Han+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      body {
+        font-family:
+          "Pretendard",
+          -apple-system,
+          BlinkMacSystemFont,
+          "Segoe UI",
+          Roboto,
+          sans-serif;
+        font-size: 16px;
+        color: #3f3f3f;
+        line-height: 150%;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        letter-spacing: -1%;
+        word-break: keep-all;
+      }
+      .event-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        background: rgba(18, 18, 18, 0.3);
+      }
+      .event-wrap .wrap-inner {
+        position: relative;
+        max-width: 600px;
+        height: 100vh;
+        overflow: auto;
+        background: #fff;
+      }
+      section {
+        padding: 0 20px;
+        overflow: hidden;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      .section1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 48px;
+        padding: 0;
+      }
+      .section2 {
+        padding: 40px 20px 38px;
+        text-align: center;
+        background-color: #2b35ba;
+        background-image: url(bg_section2.png);
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+      .section2 .box-title {
+        margin: 0 auto;
+        width: 210px;
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 20px;
+        background: linear-gradient(to left, #131857, #2935bd);
+      }
+      .section2 .box-script {
+        margin: 20px 0;
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 150%;
+        color: #fff;
+        border-radius: 16px;
+        background: linear-gradient(#1f1499, #171341);
+      }
+      .section2 .box-image {
+        margin: 20px 0;
+      }
+      .section3 {
+        padding: 40px 20px;
+      }
+      .section4 {
+        padding-bottom: 90px;
+        background-color: #2b35ba;
+        background-image: url(bg_section4.png);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+      }
+      .info-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 353px;
+        margin: 0 auto;
+      }
+      .info-wrap .items {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+      }
+      .info-wrap .item-title {
+        flex: 0 0 auto;
+        padding: 2px 10px;
+        width: 91px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        border-radius: 20px;
+        background: #103cdd;
+      }
+      .info-wrap .item-data {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 10px;
+        flex: 1 1 auto;
+        padding: 2px 10px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .info-image {
+        margin: 20px auto 0;
+        max-width: 353px;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #f2f2f2;
+      }
+      .info-image .imgbox {
+        padding: 20px 14px 14px;
+      }
+      .info-image .text {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3f3f3f;
+        text-align: center;
+        background: #e3e3e3;
+      }
+      .info-wrap .hashtag {
+        display: inline-flex;
+        align-items: center;
+        padding: 1px 14px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #103cdd;
+        border: 1px solid #103cdd;
+        border-radius: 20px;
+      }
+      .text-sysnopsis {
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+      }
+      .text-sysnopsis.copyright {
+        font-family: "Black Han Sans", sans-serif;
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+      h2.title {
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        color: #ff5722;
+        text-align: center;
+      }
+      h2.title.gradient {
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 120%;
+        background: linear-gradient(to right, #1b3ad3, #ba1d22);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .btn-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 56px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #e50914;
+        border-radius: 16px;
+      }
+      .swiper {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      .swiper-slide img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .swiper-button-prev {
+        left: 0;
+        width: 30px;
+        height: 60px;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+      .swiper-button-prev.hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .swiper-button-prev::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(img_swiper_left.png) no-repeat 50%;
+        background-size: cover;
+      }
+      .swiper-button-next {
+        right: 0;
+        width: 30px;
+        height: 60px;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+      }
+      .swiper-button-next.hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+      .swiper-button-next::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(img_swiper_right.png) no-repeat 50%;
+        background-size: cover;
+      }
+      .contain-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 20px auto 40px;
+        padding: 0 16px;
+        width: 67px;
+        height: 38px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 120%;
+        color: #fff;
+        background: #000;
+        border-radius: 20px;
+        align-items: center;
+      }
+      .contain-pagination .pagination-text {
+        display: block;
+        width: 40px;
+        text-align: center;
+      }
+      .contain-pagination .pagination-button {
+        width: 16px;
+        height: 16px;
+        margin: 0;
+        padding: 0;
+        text-indent: -1000px;
+        overflow: hidden;
+        position: relative;
+        border: none;
+      }
+      .contain-pagination .pagination-button.play {
+        background: url(swiper_stop.svg) no-repeat 50%;
+      }
+      .contain-pagination .pagination-button.stop {
+        background: url(swiper_play.svg) no-repeat 50%;
+      }
+      .animation-element {
+        position: relative;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.8s ease-out;
+      }
+      .animation-element.play {
+        position: relative;
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .contain-header {
+        position: fixed;
+        left: calc(50vw - 300px);
+        top: 0;
+        right: calc(50vw - 300px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        padding: 0 5px;
+        height: 48px;
+        background: #fff;
+        transform: translateY(0);
+        transition: transform 1s ease;
+        z-index: 100;
+      }
+      .contain-header.hide-header {
+        transform: translateY(-100%);
+      }
+      .contain-header .info-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        flex: 0 0 auto;
+        margin-right: 32px;
+      }
+      .contain-header .info-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        color: #121212;
+      }
+      .contain-header .info-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        flex: 0 0 auto;
+      }
+      .backstage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(img_site.png) no-repeat 50% top;
+        background-size: 1626px auto;
+      }
+      @media (max-width: 1120px) {
+        .backstage {
+          background: none;
+        }
+      }
+      @media (max-width: 600px) {
+        .contain-header {
+          left: 0;
+          right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backstage">
+      <div class="event-wrap">
+        <div class="wrap-inner">
+          <div class="contain-header">
+            <div class="info-link">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  aria-hidden="true"
+                  d="M16 4L8 12L16 20"
+                  stroke="#242424"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="info-title">펫 트레인</div>
+            <div class="info-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  aria-hidden="true"
+                  d="M21 11V14.01C21 16.8094 21 18.2091 20.3302 19.2157C20.0363 19.6575 19.6575 20.0363 19.2157 20.3302C18.2091 21 16.8094 21 14.01 21V21H14M3 11V14C3 16.8089 3 18.2134 3.67412 19.2223C3.96596 19.659 4.34096 20.034 4.77772 20.3259C5.78661 21 7.19108 21 10 21V21M12 15V3M12 3L8 7M12 3L16 7"
+                  stroke="#242424"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+            <div class="info-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  aria-hidden="true"
+                  d="M9.8779 4.76717C9.54812 4.59351 9.19864 4.45756 8.83599 4.36266C8.15288 4.18389 7.43919 4.15497 6.74386 4.27787C6.04853 4.40078 5.388 4.6726 4.80756 5.0747C4.22713 5.47681 3.74052 5.99968 3.38109 6.60747C3.02167 7.21526 2.79794 7.89358 2.72524 8.59594C2.65254 9.2983 2.7326 10.0081 2.95991 10.6766C3.18723 11.3451 3.57352 12.0306 4.36157 12.9262C5.14963 13.8217 11.702 20.1735 11.702 20.1735C11.702 20.1735 18.8289 13.7238 19.6086 12.9262C20.3883 12.1285 20.8112 11.3451 21.0385 10.6766C21.2658 10.0081 21.3459 9.2983 21.2732 8.59594C21.2005 7.89358 20.9768 7.21526 20.6173 6.60747C20.2579 5.99968 19.7713 5.47681 19.1909 5.0747C18.6104 4.6726 17.9499 4.40078 17.2546 4.27787C16.5592 4.15497 15.8456 4.18389 15.1625 4.36266C14.4793 4.54143 13.843 4.86581 13.297 5.31356C13.0952 5.47903 12.9075 5.65991 12.7355 5.85425L9.16641 9.90898"
+                  stroke="#242424"
+                  stroke-width="1.64821"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <section class="section1">
+            <!-- IMAGE Area -->
+            <img src="img_head.png" alt="" />
+          </section>
+          <section class="section2">
+            <div class="box-title animation-element">'슈퍼배드 4' 제작진</div>
+            <div class="box-image animation-element">
+              <img src="img_section2_1.png" alt="펫트레인 관람인증 이벤트" />
+            </div>
+            <div class="box-script animation-element">
+              2026년 가장 귀엽고 짜릿한 펫-판타스틱<br />
+              어드벤처 털복숭이 히어로 집합!<br />
+              위기에 빠진 열차를 구하라!<br />
+              &nbsp;<br />
+              <strong>
+                &lt;펫 트레인&gt;을 관람 후 티켓을 찍어 필수 해시태그와 함께
+                개인 SNS에 올려주시면 추첨을 통해 오리지널 피규어 세트를
+                드립니다!
+              </strong>
+            </div>
+          </section>
+          <section class="section3">
+            <h2 class="title gradient animation-element">EVENT INFO</h2>
+            <div class="info-wrap">
+              <div class="items">
+                <div class="item-title animation-element">이벤트 기간</div>
+                <div class="item-data animation-element">3/28[토]~ 4/9[목]</div>
+              </div>
+              <div class="items">
+                <div class="item-title animation-element">당첨 발표</div>
+                <div class="item-data animation-element">
+                  4/10(금)*개별DM 발표
+                </div>
+              </div>
+              <div class="items">
+                <div class="item-title animation-element">당첨 인원</div>
+                <div class="item-data animation-element">10명</div>
+              </div>
+              <div class="items">
+                <div class="item-title animation-element">증정 경품</div>
+                <div class="item-data animation-element">
+                  &lt;펫 트레인&gt;오리지널 피규어 세트
+                </div>
+              </div>
+              <div class="items">
+                <div class="item-title animation-element">참여 방법</div>
+                <div class="item-data animation-element">
+                  CGV에서 &lt;펫 트레인&gt; 관람 후, 필수 해시태그와 함께 SNS에
+                  실물 티켓 인증 시 추첨 통해 증정
+                </div>
+              </div>
+              <div class="items">
+                <div class="item-title animation-element">필수 해시태그</div>
+                <div class="item-data animation-element">
+                  <span class="hashtag">#펫트레인</span>
+                  <span class="hashtag">#펫트레인_CGV관람인증</span>
+                </div>
+              </div>
+            </div>
+            <div class="info-image animation-element">
+              <div class="imgbox"><img src="img_temp6.png" alt="펫 트레인 오리지널 피규어 세트" /></div>
+              <div class="text">펫 트레인 오리지널 피규어 세트</div>
+            </div>
+          </section>
+          <section class="section4">
+            <h2 class="title animation-element">MOVIE STILL</h2>
+            <div class="swiper movie-still animation-element">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img_temp1.png" alt="펫 트레인 무비 스틸" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img_temp2.png" alt="펫 트레인 무비 스틸" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img_temp3.png" alt="펫 트레인 무비 스틸" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img_temp4.png" alt="펫 트레인 무비 스틸" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img_temp5.png" alt="펫 트레인 무비 스틸" />
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <div class="contain-pagination animation-element">
+              <span class="pagination-text">1/5</span>
+              <button class="pagination-button">멈춤</button>
+            </div>
+            <h2 class="title animation-element">SYSNOPSIS</h2>
+            <div class="text-sysnopsis animation-element">
+              도심 속 동물 평화를 수호하는 정의의 너구리'팔콘!!<br />
+              배고픈 동물 친구들을 위해 열차에 오르는 순간, 복수심에 불타는 오소리 '한스'에 의해 반려동물들만 탑승한 열차가 브레이크 없이 폭주하기 시작한다.<br />
+              &nbsp;<br />
+              정면 충돌까지 남은 시간은 단 몇 분!<br />
+              일촉즉발의 위기 속에서 '팔콘'은 새로 만난 친구들과 힘을 합쳐 생존을 위한 스릴 만점의 탈출 작전에 나서는데···
+              <div class="text-sysnopsis copyright animation-element">
+                무적의 펫-벤져스!<br />위기에 빠진 열차를 구하라!
+              </div>
+            </div>
+            <div class="animation-element">
+              <a href="#none" class="btn-link">예매하러가기</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- 스크롤 방향에 따른 헤더 숨김/표시 -->
+    <script>
+      // 스크롤 방향 감지
+      const wrapInner = document.querySelector(".wrap-inner");
+      const containHeader = document.querySelector(".contain-header");
+      let lastScrollTop = 0;
+
+      wrapInner.addEventListener("scroll", () => {
+        const currentScroll = wrapInner.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // 아래로 스크롤 시 헤더 숨김
+          containHeader.classList.add("hide-header");
+        } else {
+          // 위로 스크롤 시 헤더 표시
+          containHeader.classList.remove("hide-header");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    </script>
+
+    <!-- 슬라이더 및 페이지네이션 제어 -->
+    <script>
+      const swiper = new Swiper(".movie-still", {
+        loop: true,
+        loopedSlides: 3,
+        centeredSlides: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loopAdditionalSlides: 3,
+        watchSlidesProgress: true,
+        speed: 800,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+      });
+
+      // 현재 슬라이드 번호
+      let currentPage = 1;
+
+      function updatePaginationText() {
+        const totalSlides = 5;
+        document.querySelector(".pagination-text").textContent =
+          currentPage + " / " + totalSlides;
+      }
+
+      // 페이지네이션 텍스트 초기화
+      updatePaginationText();
+
+      // 슬라이드 변경 시 페이지네이션 업데이트
+      swiper.on("activeIndexChange", (swiper) => {
+        currentPage = (swiper.realIndex % 5) + 1;
+        updatePaginationText();
+      });
+
+      // 슬라이드 이동 중 네비게이션 버튼 숨김
+      const prevBtn = document.querySelector(".swiper-button-prev");
+      const nextBtn = document.querySelector(".swiper-button-next");
+
+      swiper.on("transitionStart", () => {
+        prevBtn.classList.add("hide");
+        nextBtn.classList.add("hide");
+      });
+
+      swiper.on("transitionEnd", () => {
+        prevBtn.classList.remove("hide");
+        nextBtn.classList.remove("hide");
+      });
+
+      // 페이지네이션 버튼 - 재생/일시정지 토글
+      const paginationButton = document.querySelector(".pagination-button");
+      let isAutoplayRunning = true;
+      
+      paginationButton.classList.add("play");
+      paginationButton.addEventListener("click", () => {
+        if (isAutoplayRunning) {
+          swiper.autoplay.stop();
+          paginationButton.textContent = "시작";
+          paginationButton.classList.remove("play");
+          paginationButton.classList.add("stop");
+          isAutoplayRunning = false;
+        } else {
+          swiper.autoplay.start();
+          paginationButton.textContent = "멈춤";
+          paginationButton.classList.remove("stop");
+          paginationButton.classList.add("play");
+          isAutoplayRunning = true;
+        }
+      });
+
+      // 자동재생 시작/중지 이벤트 감지
+      swiper.on("autoplayStart", () => {
+        isAutoplayRunning = true;
+        paginationButton.textContent = "멈춤";
+        paginationButton.classList.remove("stop");
+        paginationButton.classList.add("play");
+      });
+
+      swiper.on("autoplayStop", () => {
+        isAutoplayRunning = false;
+        paginationButton.textContent = "시작";
+        paginationButton.classList.remove("play");
+        paginationButton.classList.add("stop");
+      });
+    </script>
+
+    <!-- 스크롤 애니메이션 (Intersection Observer) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const boxes = document.querySelectorAll(".animation-element");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("play");
+                observer.unobserve(entry.target); // 한 번만 애니메이션 적용
+              }
+            });
+          },
+          { threshold: 0.5 },
+        );
+        boxes.forEach((box) => observer.observe(box));
+      });
+    </script>
+  </body>
+</html>
