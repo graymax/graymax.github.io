@@ -1,0 +1,17 @@
+.areaHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  .logoSite {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navigationGlobal {
+    display: flex;
+    gap: 20px;
+    .navigationItem {
+      font-size: 14px;
+    }
+  }
+}
