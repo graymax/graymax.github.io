@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "image": "test.jpg",
+    "name": "쌍화차",
+    "description": "깊고 풍부한 향이 있는 전통차",
+    "price": "1,000원"
+  },
+  {
+    "id": 2,
+    "image": "test.jpg",
+    "name": "유자차",
+    "description": "상큼한 유자향이 나는 차",
+    "price": "900원"
+  }
+]

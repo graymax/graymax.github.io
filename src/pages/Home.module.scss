@@ -1,0 +1,9 @@
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.productList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
